@@ -6,9 +6,8 @@ addTodo.addEventListener('click', () => {
   // console.log('Working')
   if (userInput.value !== '') {
     makeList.innerHTML += `<li>${userInput.value}
-    <div class="btn-box">
     <button id='${counter}' onclick='toEdit("${counter}")'><span class="material-symbols-outlined">edit</span></button>
-    <button id='${counter}' onclick='toDelete("${counter}")'><span class="material-symbols-outlined">delete</span></button></div></li>`
+    <button id='${counter}' onclick='toDelete("${counter}")'><span class="material-symbols-outlined">delete</span></button></li>`
     userInput.value = '';
     counter++
   }
@@ -25,5 +24,5 @@ function toEdit(id) {
 function toDelete(id) {
   let itemToDelete = document.getElementById(id)
   itemToDelete.parentNode.parentNode.remove()
-  
+
 }
