@@ -1,8 +1,8 @@
 * {
-  padding: 0;
   margin: 0;
 }
-body{
+
+body {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,41 +10,57 @@ body{
   background-color: gray;
 }
 
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
 div h2 {
-  padding: 10px ;
+  padding: 10px;
 }
 
-.box-2{
+.box-2 {
   display: flex;
 }
 
-.list-box{
+.list-box {
   overflow-y: auto;
+  list-style-type: decimal !important;
+  list-style-position: inside;
+  padding: 0;
+  height: 300px;
+  /* Adjusted to make the list scrollable */
 }
 
-.list-box li{
-  display: flex;
-  justify-content: space-around;
-  /* align-items: center; */
-  width: 200px;
+.list-box li {
   background-color: aliceblue;
-  padding-bottom: 10px;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+  padding: 10px;
+  margin: 5px 0;
+  /* Add some space between items */
+  display: flex;
+  justify-content: space-between;
 }
 
-.box-2 input{
+.strikethrough {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.box-2 input {
   height: 30px;
 }
 
-.box-2 li{
+.box-2 li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  align-content: space-between;
   width: 300px;
 }
 
-
-.main-box{
+.main-box {
   display: flex;
   height: 400px;
   width: 400px;
@@ -53,4 +69,9 @@ div h2 {
   background-color: wheat;
   border-radius: 20px;
   box-shadow: 10px 20px 10px;
+}
+
+.disabled-button {
+  opacity: 0.5;
+  pointer-events: none;
 }

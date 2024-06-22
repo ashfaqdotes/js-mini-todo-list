@@ -15,13 +15,14 @@
       <h2>Mini - Todo List 📃</h2>
       <div class="box-2">
         <input id="input" placeholder="Write your new task" maxlength="20" />
-        <button id="input-btn">
+        <button id="input-btn" onclick="addTodo()">
           <span class="material-symbols-outlined">add_circle</span>
         </button>
+        <button id="clear-btn" onclick="clearAllTodos()">
+          <span class="material-symbols-outlined">delete_sweep</span>
+        </button>
       </div>
-      <div class="list-box">
-        <ol id="display"></ol>
-      </div>
+      <ol id="display" class="list-box"></ol>
     </div>
     <script src="app.js"></script>
   </body>
