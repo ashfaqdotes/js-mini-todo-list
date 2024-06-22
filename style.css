@@ -24,6 +24,7 @@ div h2 {
 }
 
 .list-box {
+  overflow-x: hidden;
   overflow-y: auto;
   list-style-type: decimal !important;
   list-style-position: inside;
